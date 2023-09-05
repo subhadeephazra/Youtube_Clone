@@ -198,9 +198,9 @@ function calculateTheTimeGap(publishTime) {
 
 function navigateToVideoDetails(videoId, videoobject) {
     localStorage.setItem("videoObject", JSON.stringify(videoobject));
-  // document.cookie = `id=${videoId}; path=https://subhadeephazra.github.io/youtube-clone/play-video.html`;
+  // document.cookie = `id=${videoId}; path=https://subhadeephazra.github.io/youtube_clone/play-video.html`;
   localStorage.setItem("id", videoId);
-  window.location.href = "https://subhadeephazra.github.io/youtube-clone/play-video.html";
+  window.location.href = "https://subhadeephazra.github.io/youtube_clone/play-video.html";
 }
 
 // function navigatetoChannelPage(videochannelid) {

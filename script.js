@@ -37,13 +37,13 @@ window.addEventListener("load", async function fetchSearchResults(searchString) 
   })
   function navigateToVideoDetails(videoId, videoobject) {
     localStorage.setItem("videoObject", JSON.stringify(videoobject));
-  // document.cookie = `id=${videoId}; path=https://subhadeephazra.github.io/youtube-clone/play-video.html`;
+  // document.cookie = `id=${videoId}; path=https://subhadeephazra.github.io/youtube_clone/play-video.html`;
   localStorage.setItem("id", videoId);
-  window.location.href = "https://subhadeephazra.github.io/youtube-clone/play-video.html";
+  window.location.href = "https://subhadeephazra.github.io/youtube_clone/play-video.html";
 }
 function navigatetoChannelPage(videochannelid) {
   localStorage.setItem("channelid", videochannelid);
-  window.location.href="https://subhadeephazra.github.io/youtube-clone/channel.html"
+  window.location.href="https://subhadeephazra.github.io/youtube_clone/channel.html"
 }
 // function navigateToVideotitles(Content) {
 //   document.cookie = `title=${Content}; path=/youtube-clone/play-video.html`;
