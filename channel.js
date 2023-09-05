@@ -198,19 +198,19 @@ function calculateTheTimeGap(publishTime) {
 
 function navigateToVideoDetails(videoId, videoobject) {
     localStorage.setItem("videoObject", JSON.stringify(videoobject));
-  // document.cookie = `id=${videoId}; path=https://voidsoul-host.github.io/youtube-clone/play-video.html`;
+  // document.cookie = `id=${videoId}; path=https://subhadeephazra.github.io/youtube-clone/play-video.html`;
   localStorage.setItem("id", videoId);
-  window.location.href = "https://voidsoul-host.github.io/youtube-clone/play-video.html";
+  window.location.href = "https://subhadeephazra.github.io/youtube-clone/play-video.html";
 }
 
 // function navigatetoChannelPage(videochannelid) {
 //   console.log(videochannelid)
 //   localStorage.setItem("channelid", videochannelid);
-//   window.location.href="http://127.0.0.1:5500/channel.html"
+//   window.location.href=""
 // }
 searchicon.addEventListener('click', (e) => {
   e.preventDefault();
   let searchvalue = searchbox.value;
   localStorage.setItem('lastSearch', searchbox.value);
-  window.location.href = "https://voidsoul-host.github.io/youtube-clone/index.html"
+  window.location.href = "https://subhadeephazra.github.io/Youtube_Clone/index.html"
 })

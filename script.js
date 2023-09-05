@@ -1,5 +1,5 @@
 const url = "https://www.googleapis.com/youtube/v3";
-let apiKey= 'AIzaSyDOd0ADUjmfRG1H7AhwDAs4cGugoW8kJk8';
+let apiKey= 'AIzaSyBQYYeSnW0-5G9K2uPDL76dLCvoz8JxdkA';
 const geoapiKey = '086cac9d62524908aa71a16e6c940f15';
 let maincontent= document.getElementById('maincontent');
 let mycards= document.getElementById('mycards');
@@ -12,7 +12,7 @@ let userState;
 window.addEventListener("load", async function fetchSearchResults(searchString) {
     // searchString will the input entered by the user
     let searchStr = localStorage.getItem("lastSearch");
-    const endpoint = `${url}/search?key=${apiKey}&q="${searchStr}"&type=video&part=snippet&maxResults=30`;
+    const endpoint = `${url}/search?key=${apiKey}&q="${"Indian Music"}"&type=video&part=snippet&maxResults=30`;
     try {
       const response = await fetch(endpoint);
       const result = await response.json();
@@ -37,13 +37,13 @@ window.addEventListener("load", async function fetchSearchResults(searchString) 
   })
   function navigateToVideoDetails(videoId, videoobject) {
     localStorage.setItem("videoObject", JSON.stringify(videoobject));
-  // document.cookie = `id=${videoId}; path=https://voidsoul-host.github.io/youtube-clone/play-video.html`;
+  // document.cookie = `id=${videoId}; path=https://subhadeephazra.github.io/youtube-clone/play-video.html`;
   localStorage.setItem("id", videoId);
-  window.location.href = "https://voidsoul-host.github.io/youtube-clone/play-video.html";
+  window.location.href = "https://subhadeephazra.github.io/youtube-clone/play-video.html";
 }
 function navigatetoChannelPage(videochannelid) {
   localStorage.setItem("channelid", videochannelid);
-  window.location.href="https://voidsoul-host.github.io/youtube-clone/channel.html"
+  window.location.href="https://subhadeephazra.github.io/youtube-clone/channel.html"
 }
 // function navigateToVideotitles(Content) {
 //   document.cookie = `title=${Content}; path=/youtube-clone/play-video.html`;
@@ -211,5 +211,5 @@ searchicon.addEventListener('click', (e) => {
   e.preventDefault();
   let searchvalue = searchbox.value;
   localStorage.setItem('lastSearch', searchbox.value);
-  window.location.href = "https://voidsoul-host.github.io/youtube-clone/index.html"
+  window.location.href = "https://subhadeephazra.github.io/Youtube_Clone/index.html"
 })

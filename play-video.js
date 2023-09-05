@@ -1,4 +1,4 @@
-const apiKey = "AIzaSyDOd0ADUjmfRG1H7AhwDAs4cGugoW8kJk8";
+const apiKey = "AIzaSyBQYYeSnW0-5G9K2uPDL76dLCvoz8JxdkA";
 const url = "https://www.googleapis.com/youtube/v3";
 const commentsContainer = document.getElementById("comments-container");
 let mycards= document.getElementById('mycards');
@@ -84,7 +84,7 @@ function loadVideoDetails(){
 
 channeNameRedirect.addEventListener('click', () =>{
   localStorage.setItem('channelId', videoObj.snippet.channelId);
-  window.location.href = "https://voidsoul-host.github.io/youtube-clone/channel.html";  //redirect to the video page of that particular channel
+  window.location.href = "https://subhadeephazra.github.io/youtube-clone/channel.html";  //redirect to the video page of that particular channel
 })
 }
 
@@ -165,9 +165,9 @@ async function suggestionResults() {
 }
 function navigateToVideoDetails(videoId, videoobject) {
   localStorage.setItem("videoObject", JSON.stringify(videoobject));
-// document.cookie = `id=${videoId}; path=https://voidsoul-host.github.io/youtube-clone/play-video.html`;
+// document.cookie = `id=${videoId}; path=https://subhadeephazra.github.io/youtube-clone/play-video.html`;
 localStorage.setItem("'id", videoId);
-window.location.href = "https://voidsoul-host.github.io/youtube-clone/play-video.html";
+window.location.href = "https://subhadeephazra.github.io/youtube-clone/play-video.html";
 }
 // function navigateToVideotitles(Content) {
 //   document.cookie = `title=${Content}; path=/youtube-clone/play-video.html`;
@@ -260,5 +260,5 @@ searchicon.addEventListener('click', (e) => {
   e.preventDefault();
   let searchvalue = searchbox.value;
   localStorage.setItem('lastSearch', searchbox.value);
-  window.location.href = "https://voidsoul-host.github.io/youtube-clone/index.html"
+  window.location.href = "https://subhadeephazra.github.io/Youtube_Clone/index.html"
 })
